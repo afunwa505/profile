@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+body {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+}
+.navigation {
+  width: 100%;
+  height: 100px;
+  background: #3792cb;
+  display: flex;
+  justify-content: space-around;
+}
+.name {
+  width: 45%;
+  padding: 30px 0 0 0;
+  color: white;
+  font-size: larger;
+}
+.nav-bar {
+  width: 45%;
+  padding: 30px 0 0 0;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar ul li {
+  list-style: none;
+  justify-content: space-around;
+}
+.container1 {
+  width: 100%;
+  height: 560px;
+  background: #3792cb;
+  display: flex;
+  justify-content: space-evenly;
+}
+.text {
+  width: 30%;
+  height: 500px;
+  color: white;
+  margin: 20px 0 0 0;
+  font-size: large;
+}
+.photo {
+  width: 45%;
+  height: 500px;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+  background: url("dp.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.wrapper1 {
+  width: 90%;
+  height: 350px;
+  margin: 70px 0 0 60px;
+  box-shadow: -1px -1px 4px 2px grey;
+  border-radius: 10px;
+}
+.skills,
+.projects {
+  padding: 60px 0 0 0;
+  text-align: center;
+}
+.hr1,
+.hr2,
+.hr3 {
+  width: 7%;
+  height: 4px;
+  background: #3792cb;
+  margin: 0 0 0 46%;
+  border-radius: 10px;
+}
+.container2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0 0 0;
+}
+.frontend,
+.backend,
+.versioncontrol {
+  width: 30%;
+  height: 150px;
+  background: rgba(0, 0, 0,0.3);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 40px 0 0 0;
+}
+.wrapper2 {
+  width: 100%;
+  height: 700px;
+  margin: 10px 0 0 0;
+}
+.wrapper2 a{
+  color: red;
+  padding: 0 0 0 30%;
+}
+.pictures {
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.picture1,
+.picture2,
+.picture3,
+.picture4 {
+  width: 30%;
+  height: 300px;
+}
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+  width: 80%;
+  height: 250px;
+  margin-left: 70px;
+}
+.wrapper3 {
+  width: 100%;
+  height: 640px;
+}
+.contact {
+  padding: 60px 0 0 0;
+  text-align: center;
+  color: black;
+}
+.container3 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact1,
+.contact2 {
+  width: 40%;
+  height: 400px;
+  margin: 50px 0 0 0;
+  color: black;
+}
+.contact1 a{
+  color: black;
+}
+.contact2 a{
+  color: black;
+}
+.about{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 0 0 0;
+}
+.slider{
+  width: 40%;
+  height: 500px;
+  animation: afunwa 10s   infinite  ;
+  border-radius: 10px;
+}
+@keyframes afunwa{
+  0%{
+    background: url('afunwa1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+   20%{
+    background: url('afunwa2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+   40%{
+    background: url('afunwa3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+   60%{
+    background: url('afunwa4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+   80%{
+    background: url('afunwa5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+   100%{
+    background: url('afunwa6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.text2{
+  font-size: larger;
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  a, .name{
+    font-size: small;
+  }
+  .container1{
+    height: 850px;
+    display: block;
+    margin: 0;
+  }
+  .text{
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+  }
+  .photo{
+    width: 100%;
+  }
+  .about{
+    height: 1050px;
+    display: block;
+    margin: 30px 0 0 0;
+  }
+  .slider{
+    width: 100%;
+    height: 400px;
+    border-radius: 0;
+  }
+  .text2{
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0 10px 0 10px;
+  }
+  .contact1, .contact2{
+    font-size: small;
+  }
+  .wrapper2{
+    height: 1700px;
+  }
+  .pictures{
+    height: 1500px;
+    display: block;
+  }
+  .picture1,
+.picture2,
+.picture3,
+.picture4{
+  width: 90%;
+  margin-bottom: 90px;
+}
+  .wrapper1{
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    box-shadow: 0 0 0 0;
+  }
+  .skills{
+    padding: 40px 0 0 0;
+  }
+  .container2{
+    height: 500px;
+    display: block;
+    margin: 40px 0 0 0;
+  }
+  .frontend,
+.backend,
+.versioncontrol {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+}
